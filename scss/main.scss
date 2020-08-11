@@ -30,14 +30,18 @@ $very-lt-gray: hsl(0, 0%, 98%);
 
 body {
     height: 100vh;
-    width: 100%;
+    max-width: 880px; 
     font-family: $body-font-family;
     font-size: $body-font-size;
+    display: flex;
+    flex-direction: column;
 }
 
+h1, h2, h3, h4 {
+    font-family: $heading-font-family;
+}
 
-
-
+/* Navigation Style */ 
 
 
 /* Footer */

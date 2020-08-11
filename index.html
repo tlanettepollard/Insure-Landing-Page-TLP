@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="/dist/css/main.css">
 </head>
 <body>
-  <main class="main__container">
+  <main class="container">
     <nav class="navigation">
       <svg xmlns="http://www.w3.org/2000/svg" width="112" height="18" class="company-logo" aria-labelledby="title">
         <title id="title" lang="en">Insure logo</title>
@@ -22,10 +22,27 @@
           <div>How we work</div>
           <div>Blog</div>
           <div>Account</div>
-          <button class="btn cta-btn">View plans</button>
+          <button class="btn cta-nav">View plans</button>
         </div><!-- .nav-links -->
-        <img src="./images/icon-hamburger.svg" alt="hamburger" id="hamburger">
-        <img src="./images/icon-close.svg" alt="close" id="close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" id="hamburger" aria-labelledby="title">
+          <title id="title" lang="en">Hamburger Open Menu</title>
+          <g fill="none" fill-rule="evenodd">
+            <path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z" />
+            <g fill="#2C2830">
+              <path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z" />
+            </g>
+          </g>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" id="close" aria-labelledby="title">
+          <title id="title" lang="en">Close Mobile Menu</title>
+          <g fill="none" fill-rule="evenodd">
+            <path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z" />
+            <g fill="#2C2830">
+              <path d="M10.873 9.563l11.314 11.314-1.06 1.06L9.813 10.623z" />
+              <path d="M9.813 20.877L21.127 9.563l1.06 1.06-11.314 11.314z" />
+            </g>
+          </g>
+        </svg>
     </nav><!-- .navigation -->
 
     <section class="intro">
@@ -72,7 +89,7 @@
       <button class="btn cta-btn">How we work</button>
       <img src="./images/bg-pattern-how-we-work-mobile.svg" alt="how-we-work">
     </section><!-- .call-to-action -->
-  </main><!-- .main__container -->
+  </main><!-- .container -->
 
   <footer class="footer__container">
     <div class="header">
