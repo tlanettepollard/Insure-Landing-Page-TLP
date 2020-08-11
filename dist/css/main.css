@@ -1,0 +1,18 @@
+/* Mobile Design--Default */
+/* Heading Font */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+/* Body Font */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+/* Variables */
+/* Primary */
+/* Neutral */
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

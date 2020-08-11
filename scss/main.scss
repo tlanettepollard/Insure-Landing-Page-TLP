@@ -1,0 +1,40 @@
+/* Mobile Design--Default */
+
+/* Heading Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* Body Font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* Variables */
+$heading-font-family: 'DM Serif Display',
+serif;
+$body-font-family: 'Karla',
+sans-serif;
+$body-font-size: 16px;
+$body-font-weight: 700;
+/* Primary */
+$dark-violet: hsl(256, 26%, 20%);
+$grayish-blue: hsl(216, 30%, 68%);
+/* Neutral */
+$very-dk-violet: hsl(270, 9%, 17%);
+$dk-grayish-violet: hsl(273, 4%, 51%);
+$very-lt-gray: hsl(0, 0%, 98%);
+
+
+
+
+
+
+
+
+/* Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
