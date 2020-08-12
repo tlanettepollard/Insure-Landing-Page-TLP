@@ -8,18 +8,31 @@
   
   <title>Frontend Mentor | Insure landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="/dist/css/main.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-
-  How we work
-  Blog
-  Account
-  View plans
+<body class="container">
+  <header id="home" class="header">
+    <nav id="mobileNav" class="navbar">
+      <span class="navbar__toggle" id="navToggle">
+        <img src="images/icon-hamburger.svg" alt="icon-hamburger" id="hamburger">
+        <img src="images/icon-close.svg" alt="icon-close" id="close">
+      </span>
+      <a href="#home">
+        <img src="images/logo.svg" alt="Insure logo" class="navbar__brand">
+      </a>
+      <ul class="main__nav" id="navMenu">
+        <li class="nav__item">How we work</li>
+        <li class="nav__item">Blog</li>
+        <li class="nav__item">Account</li>
+        <button class="btn nav-btn">View plans</button>
+      </ul>
+      <img src="images/bg-pattern-mobile-nav.svg" alt="bg-pattern-mobile-nav" class="bg-mobile-nav">
+    </nav>
+  </header>
 
   Humanizing your insurance.
 
