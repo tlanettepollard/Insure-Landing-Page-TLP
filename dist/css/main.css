@@ -49,14 +49,57 @@ header {
 
 .navigation {
   width: 100%;
+  padding: 30px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.navigation ul .mobile-nav {
+  list-style-type: none;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  padding: 30px;
+  background: #2d2640;
+}
+
+.navigation > .mobile-nav li a {
+  color: #ffffff;
+}
+
+.navigation > .mobile-nav > .cta-nav {
+  border: 1px solid white;
+  color: #ffffff;
+  margin-left: 0px;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#hamburger {
+  display: block;
 }
 
 #close {
