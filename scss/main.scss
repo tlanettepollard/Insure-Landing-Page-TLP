@@ -12,7 +12,7 @@ serif;
 $body-font-family: 'Karla',
 sans-serif;
 $body-font-size: 16px;
-$body-font-weight: 700;
+$body-font-weight: 400;
 /* Primary */
 $dark-violet: hsl(256, 26%, 20%);
 $grayish-blue: hsl(216, 30%, 68%);
@@ -35,15 +35,36 @@ html, body {
 
 body .container {
     height: 100vh;
-    max-width: 767px; 
-    font-family: $body-font-family;
-    font-size: $body-font-size;
+    max-width: 768px; 
     display: flex;
     flex-direction: column;
 }
 
 h1, h2, h3, h4 {
     font-family: $heading-font-family;
+}
+
+h2 {
+    font-weight: $body-font-weight;
+    font-size: 2.75rem;
+    line-height: 1em;
+}
+
+h3 {
+    font-weight: $body-font-weight;
+}
+
+p {
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+    font-size: 1rem;
+    line-height: 1.75em;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
 }
 
 img {
@@ -55,10 +76,7 @@ ul {
 }
 
 /* Navigation Style */ 
-.navbar {
-    width: 100vw;
-    margin-auto;
-}
+
 
 .navbar-toggler > .close {
     display: none;
@@ -78,6 +96,7 @@ ul {
     height: 50%;
     bottom: -15em;
 }
+
 /* Footer */
 
 .attribution {
