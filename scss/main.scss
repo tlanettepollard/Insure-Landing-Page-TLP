@@ -35,7 +35,7 @@ html, body {
 
 body .container {
     height: 100vh;
-    max-width: 880px; 
+    max-width: 767px; 
     font-family: $body-font-family;
     font-size: $body-font-size;
     display: flex;
@@ -55,13 +55,9 @@ ul {
 }
 
 /* Navigation Style */ 
-
-.navbar-collapse {
-    background: $very-dk-violet;
-    margin: 0;
-}
-.navbar-nav {
-    text-align: center;
+.navbar {
+    width: 100vw;
+    margin-auto;
 }
 
 .navbar-toggler > .close {
@@ -77,9 +73,10 @@ ul {
 .navbar-toggler:not(.collapsed)>.open {
     display: none;
 }
-.bg-mobile-nav {
+.nav-bg-pattern {
     width: 100%;
-    margin-top: 50px;
+    height: 50%;
+    bottom: -15em;
 }
 /* Footer */
 
