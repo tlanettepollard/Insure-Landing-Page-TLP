@@ -1,0 +1,93 @@
+/* Mobile Design--Default */
+
+/* Heading Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+/* Body Font */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/* Variables */
+$heading-font-family: 'DM Serif Display',
+serif;
+$body-font-family: 'Karla',
+sans-serif;
+$body-font-size: 16px;
+$body-font-weight: 700;
+/* Primary */
+$dark-violet: hsl(256, 26%, 20%);
+$grayish-blue: hsl(216, 30%, 68%);
+/* Neutral */
+$very-dk-violet: hsl(270, 9%, 17%);
+$dk-grayish-violet: hsl(273, 4%, 51%);
+$very-lt-gray: hsl(0, 0%, 98%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 1px solid black;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body .container {
+    height: 100vh;
+    max-width: 880px; 
+    font-family: $body-font-family;
+    font-size: $body-font-size;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4 {
+    font-family: $heading-font-family;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Navigation Style */ 
+
+.navbar-collapse {
+    background: $very-dk-violet;
+    margin: 0;
+}
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-toggler > .close {
+    display: none;
+}
+
+.navbar-toggler .collapsed> .open,
+.navbar-toggler:not(.collapsed)> .close {
+    display: inline;
+}
+
+.navbar-toggler .collapsed>.close,
+.navbar-toggler:not(.collapsed)>.open {
+    display: none;
+}
+.bg-mobile-nav {
+    width: 100%;
+    margin-top: 50px;
+}
+/* Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
