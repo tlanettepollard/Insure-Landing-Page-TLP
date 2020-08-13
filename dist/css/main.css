@@ -67,6 +67,13 @@ ul {
 }
 
 /* Navigation Style */
+.navbar {
+  width: 100vw;
+  margin: auto;
+  max-width: 768px;
+  background-color: #ffffff;
+}
+
 .navbar-toggler > .close {
   display: none;
 }
