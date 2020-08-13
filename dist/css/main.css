@@ -46,6 +46,20 @@ ul {
 }
 
 /* Navigation Style */
+.navbar-toggler > .close {
+  display: none;
+}
+
+.navbar-toggler .collapsed > .open,
+.navbar-toggler:not(.collapsed) > .close {
+  display: inline;
+}
+
+.navbar-toggler .collapsed > .close,
+.navbar-toggler:not(.collapsed) > .open {
+  display: none;
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
