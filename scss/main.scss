@@ -35,7 +35,6 @@ html, body {
 
 body {
     height: 100vh;
-    max-width: 768px; 
 }
 
 h1, h2, h3, h4 {
@@ -65,9 +64,7 @@ img {
 
 /* Navigation Style */ 
 .navbar {
-    width: 100vw;
     margin: auto;
-    max-width: 768px;
     background-color: white;
     display: flex;
     align-items: center;
