@@ -153,6 +153,51 @@ img {
     bottom: -15em;
 }
 
+/* Intro Style */
+
+.company__intro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    background-color: $dark-violet;
+}
+
+.intro__img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.intro__info {
+    text-align: center;
+    align-items: center;
+    padding: 100px 30px;
+}
+
+.intro__title {
+    position: relative;
+    color: #ffffff;
+    font-size: 55px;
+    margin: auto;
+    z-index: 2;
+
+}
+.intro__paragraph {
+    color: #ffffff;
+    margin: 20px auto;
+    padding: 20px 30px;
+    width: 90%;
+}
+.intro-btn {
+    text-transform: uppercase;
+    margin: auto;
+    padding: 10px 20px;
+    font-weight: 700;
+    width: 80% !important;
+}
+
+
 /* Footer */
 
 

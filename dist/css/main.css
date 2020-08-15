@@ -160,6 +160,58 @@ img {
   bottom: -15em;
 }
 
+/* Intro Style */
+.company__intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2d2640;
+}
+
+.intro__img {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.intro__info {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 30px;
+}
+
+.intro__title {
+  position: relative;
+  color: #ffffff;
+  font-size: 55px;
+  margin: auto;
+  z-index: 2;
+}
+
+.intro__paragraph {
+  color: #ffffff;
+  margin: 20px auto;
+  padding: 20px 30px;
+  width: 90%;
+}
+
+.intro-btn {
+  text-transform: uppercase;
+  margin: auto;
+  padding: 10px 20px;
+  font-weight: 700;
+  width: 80% !important;
+}
+
 /* Footer */
 .desktop {
   visibility: hidden;
