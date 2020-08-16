@@ -11,7 +11,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
 }
 
 html, body {
@@ -52,18 +52,10 @@ img {
 .navbar {
   margin: auto;
   background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .collapse {
+  height: 600px;
   background: #2b272f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,35 +64,24 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: 700;
 }
 
 .navbar-nav {
-  width: 100%;
   list-style-type: none;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .nav-item {
-  color: #ffffff;
+  width: 100%;
+  margin: auto;
   padding: 1em;
   margin-bottom: 1em;
-  overflow: hidden;
 }
 
 .nav-link {
@@ -110,7 +91,7 @@ img {
   text-decoration: none;
   font-size: 1.25rem;
   font-family: "Karla", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.1em;
   color: #ffffff;
 }
@@ -132,7 +113,8 @@ img {
   text-transform: uppercase;
 }
 
-.navbar-brand, .navbar-toggler {
+.navbar-brand,
+.navbar-toggler {
   margin-bottom: 15px;
 }
 
@@ -150,18 +132,22 @@ img {
   display: none;
 }
 
-.navbar-brand, .navbar-toggler {
+.navbar-brand,
+.navbar-toggler {
   margin-bottom: 15px;
 }
 
 .nav-pattern {
   width: 100%;
-  height: 50%;
-  bottom: -15em;
+  height: 200px;
+  margin-top: 20px;
+  background-image: url("/images/bg-pattern-mobile-nav.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Intro Style */
-.company__intro {
+.intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,54 +155,70 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  padding: 0;
-  overflow: hidden;
-  background-color: #2d2640;
-}
-
-.intro__img {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-}
-
-.intro__info {
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 100px 30px;
+  position: relative;
+  background: #2d2640;
+}
+
+.intro__image {
+  width: 100%;
+}
+
+.intro__info {
+  width: 90%;
+  padding: 6em 0;
+  text-align: center;
+  color: white;
+  position: relative;
 }
 
 .intro__title {
-  position: relative;
-  color: #ffffff;
-  font-size: 55px;
+  font-size: 50px;
   margin: auto;
   z-index: 2;
 }
 
 .intro__paragraph {
-  color: #ffffff;
   margin: 20px auto;
-  padding: 20px 30px;
+  padding: 10px 20px;
+  font-weight: 700;
   width: 90%;
+  z-index: 2;
 }
 
 .intro-btn {
-  text-transform: uppercase;
+  width: 50% !important;
   margin: auto;
-  padding: 10px 20px;
   font-weight: 700;
-  width: 80% !important;
 }
 
-/* Footer */
+.intro__pattern {
+  position: absolute;
+  width: 8em;
+}
+
+.intro-pattern-rt {
+  bottom: -35em;
+  right: 0;
+  z-index: 0;
+}
+
+.intro-pattern-lf {
+  top: 33em;
+  left: 0;
+}
+
 .desktop {
+  display: none;
   visibility: hidden;
 }
 
+/* Footer */
 .attribution {
   font-size: 11px;
   text-align: center;

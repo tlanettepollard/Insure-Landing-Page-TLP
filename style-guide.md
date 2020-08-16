@@ -105,3 +105,97 @@ How we work
   Careers
   Press
   Licenses
+
+
+
+
+
+  .navbar {
+    margin: auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collapse {
+    background: $very-dk-violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.navbar-nav {
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item {
+    color: #ffffff;
+    padding: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+.nav-link {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-btn {
+    height: 50px;
+    width: 80% !important;
+    border: 2px solid white;
+    color: white;
+    margin: 2em 0;
+    cursor: pointer;
+    font-family: $body-font-weight;
+    font-size: 1.25rem;
+    font-weight: $body-font-weight;
+    text-transform: uppercase;
+}
+
+
+.navbar-brand, .navbar-toggler {
+    margin-bottom: 15px;
+}
+
+.navbar-toggler > .close {
+    display: none;   
+}
+
+.navbar-toggler .collapsed> .open,
+.navbar-toggler:not(.collapsed)> .close {
+    display: inline;
+}
+
+.navbar-toggler .collapsed>.close,
+.navbar-toggler:not(.collapsed)>.open {
+    display: none;
+}
+
+.navbar-brand, .navbar-toggler {
+    margin-bottom: 15px;
+}
+
+.nav-pattern {
+    width: 100%;
+    height: 50%;
+    bottom: -15em;
+}
