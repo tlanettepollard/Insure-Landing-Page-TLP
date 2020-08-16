@@ -148,16 +148,77 @@ img {
     margin-top: 20px;
     background-image: url("/images/bg-pattern-mobile-nav.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;  
 }
 
 
 /* Intro Style */
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: $dark-violet;
+}
+
+.intro__image {
+    width: 100%;
+}
+
+.intro__info {
+    width: 90%;
+    padding: 6em 0;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.intro__title {
+    font-size: 50px;
+    margin: auto;
+    z-index: 2;
+}
+
+.intro__paragraph {
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-weight: 700;
+    width: 90%;
+    z-index: 2;
+}
+
+.intro-btn {
+    width: 50% !important;
+    margin: auto;
+    font-weight: 700;
+}
+
+.intro__pattern {
+    position: absolute;
+    width: 8em;
+}
+
+.intro-pattern-rt {
+    bottom: -35em;
+    right: 0;
+    z-index: 0;
+}
+
+.intro-pattern-lf {
+    top: 33em;
+    left: 0;
+}
 
 
 
+
+
+ .desktop {
+    display: none;
+    visibility: hidden;
+}
 /* Footer */
 
 

@@ -11,7 +11,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
 }
 
 html, body {
@@ -147,6 +147,77 @@ img {
 }
 
 /* Intro Style */
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background: #2d2640;
+}
+
+.intro__image {
+  width: 100%;
+}
+
+.intro__info {
+  width: 90%;
+  padding: 6em 0;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.intro__title {
+  font-size: 50px;
+  margin: auto;
+  z-index: 2;
+}
+
+.intro__paragraph {
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-weight: 700;
+  width: 90%;
+  z-index: 2;
+}
+
+.intro-btn {
+  width: 50% !important;
+  margin: auto;
+  font-weight: 700;
+}
+
+.intro__pattern {
+  position: absolute;
+  width: 8em;
+}
+
+.intro-pattern-rt {
+  bottom: -35em;
+  right: 0;
+  z-index: 0;
+}
+
+.intro-pattern-lf {
+  top: 33em;
+  left: 0;
+}
+
+.desktop {
+  display: none;
+  visibility: hidden;
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
