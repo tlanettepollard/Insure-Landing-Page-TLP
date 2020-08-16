@@ -267,6 +267,36 @@ img {
 .content-img {
     margin-bottom: 2.25em;
 }
+
+/* CTA Style */
+.cta {
+    width: 90%;
+    margin: 4em auto 9em auto;
+    padding: 4.5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $dark-violet;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    background-image: url("/images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+}
+
+.cta-title {
+    font-size: 50px;
+    margin-bottom: 1em;
+    padding: 0 0.5em;
+}
+
+.cta-btn {
+    @extend .intro-btn;
+}
 /* Footer */
 
 
