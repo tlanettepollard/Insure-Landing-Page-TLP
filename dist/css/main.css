@@ -11,7 +11,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /*outline: 1px solid black;*/
+  outline: 1px solid black;
 }
 
 html, body {
@@ -165,8 +165,12 @@ img {
   background: #2d2640;
 }
 
+.intro-line {
+  display: none;
+}
+
 .intro__image {
-  width: 100%;
+  width: 100vw;
 }
 
 .intro__info {
@@ -179,22 +183,38 @@ img {
 
 .intro__title {
   font-size: 50px;
-  margin: auto;
-  z-index: 2;
+  margin-bottom: 0.4em;
 }
 
 .intro__paragraph {
-  margin: 20px auto;
-  padding: 10px 20px;
-  font-weight: 700;
-  width: 90%;
-  z-index: 2;
+  margin-bottom: 2em;
 }
 
 .intro-btn {
   width: 50% !important;
   margin: auto;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.75em 2em;
+}
+
+.intro-btn:hover {
+  cursor: pointer;
+  color: #2b272f;
+  background-color: #ffffff;
+}
+
+.intro__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
 }
 
 .intro__pattern {
@@ -203,13 +223,12 @@ img {
 }
 
 .intro-pattern-rt {
-  bottom: -35em;
+  bottom: -12em;
   right: 0;
-  z-index: 0;
 }
 
 .intro-pattern-lf {
-  top: 33em;
+  top: 0;
   left: 0;
 }
 
