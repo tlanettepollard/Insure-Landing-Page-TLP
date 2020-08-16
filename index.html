@@ -29,10 +29,10 @@
     <div class="collapse navbar-collapse" id="navbarMobile">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">How we work</a>
+          <a class="nav-link" href="#">How we work</a>
         </li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Blog</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#">Account</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
       </ul>
       <button type="button" class="btn btn-outline-light btn-lg btn-block nav-btn">View plans</button>
       <div class="nav-pattern"></div>
@@ -42,31 +42,34 @@
   <!-- Begin Main Content -->
   <main>
     <section class="intro">
-      <div class="row">
-        <img src="./images/image-intro-mobile.jpg" alt="Happy family" class="img-fluid intro__image col-md-6 mx-auto">
-        <div class="intro__info col-md-6">
-          <div class="intro-pattern-lf">pattern</div>
-          <h2 class="intro__title">Humanizing your insurance.</h2>
-          <p class="intro__paragraph">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
-          <button type="button" class="btn btn-outline-light btn-lg btn-block intro-btn">View plans</button>
-          <div class="intro-pattern-rt">pattern</div>
-        </div><!-- .intro__info -->
-      </div><!-- .row -->
+      <img src="./images/image-intro-mobile.jpg" alt="Happy family" class="intro__image mx-auto">
+      <div class="intro__container">
+        <hr class="intro-line" />
+        <div class="row">
+          <div class="intro__info col-md-6">
+            <h2 class="intro__title">Humanizing your insurance.</h2>
+            <p class="intro__paragraph">Get your life insurance coverage easier and faster. We blend our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved ones are protected.</p>
+            <button type="button" class="btn btn-outline-light btn-lg btn-block intro-btn">View plans</button>
+          </div><!-- .intro__info -->
+        </div><!-- .row -->
+        <img src="images/bg-pattern-intro-left-mobile.svg" alt="intro left pattern"
+        class="intro__pattern intro-pattern-lf mobile">
+        <img src="images/bg-pattern-intro-right-mobile.svg" alt="intro right pattern"
+        class="intro__pattern intro-pattern-rt mobile">
+      </div><!-- .intro__container -->
+      
+      <img src="images/bg-pattern-intro-left-desktop.svg" alt="intro left pattern desktop"
+      class="intro__pattern intro-pattern-lf desktop">
+      <img src="images/bg-pattern-intro-right-desktop.svg" alt="intro right pattern desktop"
+      class="intro__pattern intro-pattern-rt desktop">
       
     </section><!-- .intro -->
-    <!--<img src="images/bg-pattern-intro-left-mobile.svg" alt="intro left pattern"
-      class="intro__pattern intro-pattern-lf mobile">
-    <img src="images/bg-pattern-intro-right-mobile.svg" alt="intro right pattern"
-      class="intro__pattern intro-pattern-rt mobile">
-    <img src="images/bg-pattern-intro-left-desktop.svg" alt="intro left pattern desktop"
-    class="intro__pattern intro-pattern-lf desktop">
-    <img src="images/bg-pattern-intro-right-desktop.svg" alt="intro right pattern desktop"
-    class="intro__pattern intro-pattern-rt desktop">-->
+    
     <!-- End Intro Section -->
 
     <section class="content">
-      <div class="container">
-        <hr class="content-line">
+      <div class="content__container">
+        <hr class="content-line" />
         <h2>We’re different</h2>
         <div class="row">
           <div class="content__cards col-md-4">
@@ -117,44 +120,44 @@
         </div><!-- .social -->
       </div>
     </div><!-- .footer__header -->
-
-    <div class="footer__content container">
+    
+    <div class="footer__content-container">
       <div class="row">
         <div class="footer__links col-md-3">
           <h3 class="ft__link-title">Our company</h3>
           <ul>
-            <li class="ft-link-item">How we work</li>
-            <li class="ft-link-item">Why Insure?</li>
-            <li class="ft-link-item">View plans</li>
-            <li class="ft-link-item">Reviews</li>
+            <li class="ft-link-item"><a href="#" class="ft-links">How we work</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Why Insure?</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">View plans</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Reviews</a></li>
           </ul>
         </div><!-- .footer__links -->
 
         <div class="footer__links col-md-3">
           <h3 class="ft__link-title">Help me</h3>
           <ul>
-            <li class="ft-link-item">FAQ</li>
-            <li class="ft-link-item">Terms of use</li>
-            <li class="ft-link-item">Privacy policy</li>
-            <li class="ft-link-item">Cookies</li>
+            <li class="ft-link-item"><a href="#" class="ft-links">FAQ</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Terms of use</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Privacy policy</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Cookies</a></li>
           </ul>
         </div><!-- .footer__links -->
 
         <div class="footer__links col-md-3">
           <h3 class="ft__link-title">Contact</h3>
           <ul>
-            <li class="ft-link-item">Sales</li>
-            <li class="ft-link-item">Support</li>
-            <li class="ft-link-item">Live chat</li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Sales</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Support</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Live chat</a></li>
           </ul>
         </div><!-- .footer__links -->
 
         <div class="footer__links col-md-3">
           <h3 class="ft__link-title">Others</h3>
           <ul>
-            <li class="ft-link-item">Careers</li>
-            <li class="ft-link-item">Press</li>
-            <li class="ft-link-item">Licenses</li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Careers</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Press</a></li>
+            <li class="ft-link-item"><a href="#" class="ft-links">Licenses</a></li>
           </ul>
         </div><!-- .footer__links -->
 
