@@ -393,37 +393,50 @@ img {
 
 @media only screen and (min-width: 768px) {
     .navbar {
+        background-color: white;
         padding: 0.5em 2em;
+    }
+    .navbar-brand {
+        margin-top: 10px;
+        margin-left: 165px;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-nav {
+        margin-right: 1em;
+        width: 40%;
     }
     .collapse {
         height: 80px;
-        background-color: #ffffff;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-    }
-    .navbar-nav {
-        position: initial;
-        background: none;
-        width: 50%;
-        height: auto;
-        flex-direction: row;
         align-items: center;
-        justify-content: flex-end;
+        background-color: transparent;
     }
-    .nav-pattern {
-        display: none;
+    .btn-lg {
+        width: 150px !important;
+        margin-right: 165px;
+        font-size: 1em !important;
+        color: $dark-violet !important;
+    }
+    .btn-lg:hover {
+        color: white !important;
+        background-color: $dark-violet !important;
     }
     .nav-item {
         width: auto;
-        margin: 0 0 0 0.75em;
+        margin: 0 0.75em;
     }
     .nav-link {
-        color: $dark-violet;
-        font-size: 0.75rem;
         font-weight: 700;
+        font-size: 1em;
+        color: $dk-grayish-violet;
     }
-    .nav-btn .btn-outline-light {
-       
+    .nav-link:hover {
+        color: $dark-violet;
+    }
+    .nav-pattern {
+        display: none;
     }
 }
