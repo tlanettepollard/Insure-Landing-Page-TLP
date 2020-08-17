@@ -433,7 +433,6 @@ img {
         display: none;
     }
     .intro {
-        height: 600px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -450,7 +449,7 @@ img {
     .intro__image {
         position: relative;
         top: 6rem;
-        right: 40px;
+        right: 80px;
         width: 40%;
         order: 2;
     }

@@ -493,7 +493,6 @@ img {
     display: none;
   }
   .intro {
-    height: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -519,7 +518,7 @@ img {
   .intro__image {
     position: relative;
     top: 6rem;
-    right: 40px;
+    right: 80px;
     width: 40%;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
