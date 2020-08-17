@@ -168,7 +168,7 @@ img {
 }
 
 .intro__image {
-    width: 100vw;
+    width: 100%;
 }
 
 .intro__info {
@@ -432,5 +432,41 @@ img {
     .nav-pattern {
         display: none;
     }
-    
+    .intro {
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .intro__container {
+        width: 45%;
+        order: 1;
+    }
+    .intro__info {
+        margin-left: 120px;
+        padding: 2em 0;
+        text-align: left;
+    }
+    .intro__image {
+        position: relative;
+        top: 6rem;
+        right: 40px;
+        width: 40%;
+        order: 2;
+    }
+    .intro__title {
+        margin-top: 80px;
+    }
+    .intro-btn {
+        margin-left: 0;
+        color: white !important;
+    }
+    .intro-btn:hover {
+        background-color: white !important;
+        color: $dark-violet !important;
+    }
+    .mobile {
+        display: none;
+        visibility: hidden;
+    }
 }
