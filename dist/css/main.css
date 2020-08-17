@@ -443,26 +443,10 @@ img {
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-  .navbar {
-    background-color: white;
-    padding: 0.5em 2em;
-  }
-  .navbar-brand {
-    margin-top: 10px;
-    margin-left: 165px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .navbar-nav {
-    margin-right: 1em;
-    width: 40%;
-  }
   .collapse {
-    height: 80px;
+    height: auto;
+    width: auto;
+    margin-right: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -476,29 +460,34 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: transparent;
+    background: none;
   }
-  .btn-lg {
-    width: 150px !important;
-    margin-right: 165px;
-    font-size: 1em !important;
-    color: #2d2640 !important;
+  .navbar-nav {
+    margin-right: 20px !important;
   }
-  .btn-lg:hover {
-    color: white !important;
-    background-color: #2d2640 !important;
+  .navbar-brand {
+    margin: 0 40px;
   }
   .nav-item {
     width: auto;
     margin: 0 0.75em;
   }
   .nav-link {
-    font-weight: 700;
-    font-size: 1em;
+    font-size: 0.75em;
     color: #837d87;
   }
   .nav-link:hover {
     color: #2d2640;
+  }
+  .btn-lg {
+    width: 150px !important;
+    font-size: 1em !important;
+    margin-right: 2em;
+    color: #2d2640 !important;
+  }
+  .btn-lg:hover {
+    background-color: #2d2640 !important;
+    color: white !important;
   }
   .nav-pattern {
     display: none;
