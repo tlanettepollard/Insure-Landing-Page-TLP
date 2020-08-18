@@ -155,14 +155,15 @@ img {
 /* Intro Style */
 
 .intro {
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: $dark-violet;  
     position: relative;
-    background: $dark-violet;
-    
 }
+
 .intro-line {
     display: none;
 }
@@ -173,10 +174,11 @@ img {
 
 .intro__info {
     width: 90%;
+    margin: auto;
     padding: 6em 0;
     text-align: center;
     color: white;
-    position: relative;
+    
 }
 
 .intro__title {
@@ -228,7 +230,7 @@ img {
 
 .desktop {
     display: none;
-    /*visibility: hidden; */
+    
 }
 
 /* Content Styling */
@@ -390,83 +392,3 @@ img {
 
 
 /* Media Queries */ 
-
-@media only screen and (min-width: 768px) {
-    .collapse {
-        height: auto;
-        width: auto;
-        margin-right: 40px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        background: none;
-    }
-    .navbar-nav {
-        margin-right: 20px !important;
-    }
-    .navbar-brand {
-        margin: 0 40px;
-    }
-    .nav-item {
-        width: auto;
-        margin: 0 0.75em;
-    }
-    .nav-link {
-        font-size: 0.75em;
-        color: $dk-grayish-violet;
-    }
-    .nav-link:hover {
-        color: $dark-violet;
-    }
-    .btn-lg {
-        width: 150px !important;
-        font-size: 1em !important;
-        margin-right: 2em;
-        color: $dark-violet !important;
-    }
-    .btn-lg:hover {
-        background-color: $dark-violet !important;
-        color: white !important;
-    }
-    .nav-pattern {
-        display: none;
-    }
-    .intro {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .intro__container {
-        width: 45%;
-        order: 1;
-    }
-    .intro__info {
-        margin-left: 120px;
-        padding: 2em 0;
-        text-align: left;
-    }
-    .intro__image {
-        position: relative;
-        top: 6rem;
-        right: 80px;
-        width: 40%;
-        order: 2;
-    }
-    .intro__title {
-        margin-top: 80px;
-    }
-    .intro-btn {
-        margin-left: 0;
-        color: white !important;
-    }
-    .intro-btn:hover {
-        background-color: white !important;
-        color: $dark-violet !important;
-    }
-    .mobile {
-        display: none;
-        /*visibility: hidden;*/
-    }
-
-}
