@@ -440,6 +440,9 @@ img {
         font-size: 0.75em;
         color: $dk-grayish-violet;
     }
+    .nav-link:hover {
+        color: $dark-violet;
+    }
     .nav-btn {
         width: 150px !important;
         font-size: 1em !important;
@@ -452,5 +455,10 @@ img {
     }
     .nav-pattern {
         display: none;
+    }
+    .intro {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
