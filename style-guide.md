@@ -199,3 +199,7 @@ How we work
     height: 50%;
     bottom: -15em;
 }
+
+
+<img src="images/image-intro-mobile.jpg" srcset="images/image-intro-mobile.jpg 375w,
+                            images/image-intro-desktop.jpg 540w" alt="Happy Family">
