@@ -48,6 +48,11 @@ img {
   display: block;
 }
 
+hr {
+  background-color: #837d87;
+  width: 100%;
+}
+
 /* Navigation Style */
 .navbar {
   margin: auto;
@@ -56,6 +61,7 @@ img {
 
 .collapse {
   height: 600px;
+  max-height: 680px;
   background: #2b272f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,7 +146,7 @@ img {
 .nav-pattern {
   width: 100%;
   height: 200px;
-  margin-top: 20px;
+  bottom: -12em;
   background-image: url("/images/bg-pattern-mobile-nav.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,6 +154,7 @@ img {
 
 /* Intro Style */
 .intro {
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,8 +168,8 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
   background: #2d2640;
+  position: relative;
 }
 
 .intro-line {
@@ -175,10 +182,10 @@ img {
 
 .intro__info {
   width: 90%;
+  margin: auto;
   padding: 6em 0;
   text-align: center;
   color: white;
-  position: relative;
 }
 
 .intro__title {
@@ -234,7 +241,7 @@ img {
 
 .desktop {
   display: none;
-  /*visibility: hidden; */
+  visibility: hidden;
 }
 
 /* Content Styling */
@@ -256,7 +263,7 @@ img {
 .content-line {
   margin-top: 10em;
   width: 10em;
-  background-color: #2b272f;
+  background-color: #837d87;
 }
 
 .content__container h2 {
@@ -409,7 +416,7 @@ img {
   margin-bottom: 1.5em;
   font-family: "Karla", sans-serif;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   color: #837d87;
 }
@@ -442,11 +449,35 @@ img {
 }
 
 /* Media Queries */
+/* Tablet */
 @media only screen and (min-width: 768px) {
+  .collapse {
+    height: 640px;
+    max-height: 680px;
+  }
+  .nav-pattern {
+    bottom: -15em;
+  }
+  .content__cards p {
+    font-size: 1.2rem;
+  }
+  .ft__link-title, .ft-links {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  /* Navigation */
+  .navbar {
+    z-index: 0;
+    padding: 0.5em 2em;
+  }
   .collapse {
     height: auto;
     width: auto;
     margin-right: 40px;
+    background: none;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -460,7 +491,6 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background: none;
   }
   .navbar-nav {
     margin-right: 20px !important;
@@ -479,19 +509,20 @@ img {
   .nav-link:hover {
     color: #2d2640;
   }
-  .btn-lg {
+  .nav-btn {
     width: 150px !important;
     font-size: 1em !important;
     margin-right: 2em;
     color: #2d2640 !important;
   }
-  .btn-lg:hover {
+  .nav-btn:hover {
     background-color: #2d2640 !important;
     color: white !important;
   }
   .nav-pattern {
     display: none;
   }
+  /* Intro */
   .intro {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -504,40 +535,114 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .intro__container {
-    width: 45%;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .mobile {
+    display: none;
+    visibility: hidden;
   }
-  .intro__info {
-    margin-left: 120px;
-    padding: 2em 0;
-    text-align: left;
+  .desktop {
+    display: initial;
+    visibility: visible;
+  }
+  .intro {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-top: 2em;
   }
   .intro__image {
     position: relative;
-    top: 6rem;
-    right: 80px;
+    top: 6em;
     width: 40%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  }
+  .intro__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 4em;
+    margin-right: 2em;
+  }
+  .intro-line {
+    width: 150px;
+    margin-left: 20px;
+    display: inherit;
+    position: absolute;
+    background-color: #837d87;
+  }
+  .intro__info {
+    padding-top: 4em;
+    max-width: 640px;
+    text-align: left;
+    width: 94%;
   }
   .intro__title {
-    margin-top: 80px;
+    width: 90%;
   }
-  .intro-btn, .cta-btn {
-    margin-left: 0;
-    color: white !important;
+  .intro__paragraph {
+    margin-bottom: 3em;
   }
-  .intro-btn:hover, .cta-btn:hover {
-    background-color: white !important;
-    color: #2d2640 !important;
+  .intro__pattern {
+    width: auto;
   }
-  .mobile {
-    display: none;
-    /*visibility: hidden;*/
+  .intro-pattern-lf {
+    bottom: -22em;
+    top: initial;
+  }
+  .intro-pattern-rt {
+    right: 0;
+    top: 0;
+    bottom: initial;
+  }
+  /* Content */
+  .content__container {
+    margin: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 90%;
+    padding: 0 2em;
+    margin-top: 8em;
+    margin-bottom: 6em;
+  }
+  /* Footer */
+  .container-fluid {
+    width: 100%;
+    max-width: 1440px;
+    background-image: url("/images/bg-pattern-footer-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: contain;
+  }
+  .footer__header {
+    width: 100%;
+  }
+  .footer__header .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer__header .social {
+    margin: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
 }
 /*# sourceMappingURL=main.css.map */
