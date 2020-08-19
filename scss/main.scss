@@ -252,7 +252,7 @@ hr {
 .content-line {
     margin-top: 10em;
     width: 10em;
-    background-color: $very-dk-violet;
+    background-color: $dk-grayish-violet;
 }
 
 .content__container h2 {
@@ -501,6 +501,7 @@ hr {
         margin-left: 20px;
         display: inherit;
         position: absolute;
+        background-color: $dk-grayish-violet;
     }
     .intro__info {
         padding-top: 4em;
@@ -525,6 +526,15 @@ hr {
         right: 0;
         top: 0;
         bottom: initial;
+    }
+    /* Content */
+    .content__container {
+        margin: auto;
+        align-items: flex-start;
+        width: 90%;
+        padding: 0 2em;
+        margin-top: 8em;
+        margin-bottom: 6em;
     }
 
     /* Footer */
