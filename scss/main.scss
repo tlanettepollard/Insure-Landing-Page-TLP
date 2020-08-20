@@ -25,7 +25,7 @@ $very-lt-gray: hsl(0, 0%, 98%);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: 1px solid black;
+    /*outline: 1px solid black;*/ 
 }
 
 html, body {
@@ -76,11 +76,12 @@ hr {
 .collapse {
     height: 600px;
     max-height: 680px;
-    background: $very-dk-violet;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     font-family: 700;
+    background-color: $very-dk-violet;
+    transition: background-color 600ms ease;
 }
 
 .navbar-nav {
@@ -449,7 +450,7 @@ hr {
         margin: 0 0.75em;
     }
     .nav-link {
-        font-size: 0.75em;
+        font-size: 1em;
         color: $dk-grayish-violet;
     }
     .nav-link:hover {
