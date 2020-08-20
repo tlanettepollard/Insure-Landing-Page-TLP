@@ -12,3 +12,5 @@ learned about using srcset for responsive images: https://developer.mozilla.org/
 Realized I could design for mobile and tablet using responsive navbar. 
 desktop size: media screen and min-width 1280px;
 tablet size: media screen and min-width: 700px;
+
+Eased in transition of background color on mobile nav
