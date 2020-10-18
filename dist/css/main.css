@@ -347,7 +347,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fafafa;
-  background-image: url("/images/bg-pattern-footer-mobile.svg");
+  background-image: url("../images/bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
   background-position: contain;
 }
