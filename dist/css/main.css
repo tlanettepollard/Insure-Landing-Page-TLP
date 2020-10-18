@@ -318,7 +318,7 @@ hr {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-image: url("/images/bg-pattern-how-we-work-mobile.svg");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
@@ -656,7 +656,7 @@ hr {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+    background-image: url("/images/bg-pattern-how-we-work-desktop.svg");
     background-repeat: no-repeat;
     background-position: 100% 0%;
   }
