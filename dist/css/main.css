@@ -88,7 +88,7 @@ hr {
 .nav-item {
   width: 100%;
   margin: auto;
-  padding: 1em;
+  padding: 0.5em;
   margin-bottom: 1em;
 }
 
@@ -688,8 +688,8 @@ hr {
   }
   /* Footer */
   .container-fluid {
-    width: 90%;
-    max-width: 1440px;
+    width: 100%;
+    max-width: 1580px;
     margin-top: 2em;
     padding: 0 3em;
     background-image: url("../images/bg-pattern-footer-desktop.svg");
