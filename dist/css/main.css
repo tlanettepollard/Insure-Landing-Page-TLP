@@ -685,7 +685,7 @@ hr {
   }
   .cta-btn {
     width: 200px !important;
-    font-size: 1em;
+    font-size: 0.95em !important;
   }
   /* Footer */
   .container-fluid {
