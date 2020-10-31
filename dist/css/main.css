@@ -329,6 +329,10 @@ hr {
   padding: 0 0.5em;
 }
 
+.cta-btn {
+  font-size: 0.95rem !important;
+}
+
 /* Footer */
 .container-fluid {
   width: 90%;
