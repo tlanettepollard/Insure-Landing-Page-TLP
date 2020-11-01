@@ -15,7 +15,7 @@ I realized I could design for mobile and tablet using responsive navbar. The def
 
 You can see the my final design here: [Insure Landing Page](https://insure-landing-page-tlp.vercel.app/)
 
-Designer: [T.Lanette Pollard](https://tlanetterose.github.io/)
+Designer: [T.Lanette Pollard](https://github.com/TLanetteRose)
 
 ## Attribution
 Challenge by [Frontend Mentor](https://www.frontendmentor.io?ref=challenge)
