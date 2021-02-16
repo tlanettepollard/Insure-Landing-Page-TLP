@@ -13,7 +13,7 @@ I realized I could design for mobile and tablet using responsive navbar. The def
 
 ## Completed Design
 
-You can see the my final design here: [Insure Landing Page](https://insure-landing-page-tlp.vercel.app/)
+You can see my final design here: [Insure Landing Page](https://insure-landing-page-tlp.vercel.app/)
 
 Designer: [T.Lanette Pollard](https://github.com/TLanetteRose)
 
