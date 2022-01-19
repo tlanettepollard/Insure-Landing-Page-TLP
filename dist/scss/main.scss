@@ -87,12 +87,13 @@ hr {
 .navbar-nav {
     list-style-type: none;
     display: flex;
+    
 }
 
 .nav-item {
     width: 100%;
     margin: auto;
-    padding: 1em;
+    padding: 0.5em;
     margin-bottom: 1em;
 }
 
@@ -152,8 +153,8 @@ hr {
 .nav-pattern {
     width: 100%;
     height: 200px;
-    bottom: -12em;
-    background-image: url("/dist/images/bg-pattern-mobile-nav.svg");
+    bottom: -10em;
+    background-image: url("../images/bg-pattern-mobile-nav.svg");
     background-repeat: no-repeat;
     background-size: cover;  
 }
@@ -292,7 +293,7 @@ hr {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background-image: url("images/bg-pattern-how-we-work-mobile.svg");
+    background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
     background-repeat: no-repeat;
     background-position: 100% 0;
 }
@@ -305,6 +306,7 @@ hr {
 
 .cta-btn {
     @extend .intro-btn;
+    font-size: 0.95rem !important;
 }
 /* Footer */
 
@@ -316,7 +318,7 @@ hr {
     justify-content: center;
     align-items: center;
     background-color: $very-lt-gray;
-    background-image: url("images/bg-pattern-footer-mobile.svg");
+    background-image: url("../images/bg-pattern-footer-mobile.svg");
     background-repeat: no-repeat;
     background-position: contain;
 }
@@ -565,7 +567,7 @@ hr {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        background-image: url("images/bg-pattern-how-we-work-desktop.svg");
+        background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
         background-repeat: no-repeat;
         background-position: 100% 0%;
     }
@@ -579,20 +581,21 @@ hr {
         text-align: left;
     }
     .cta-title {
-        font-size: 2.5em;
+        font-size: 2em;
         margin: auto;
         width: 50%;
     }
     .cta-btn {
-        width: 200px !important;  
+        width: 200px !important; 
+        font-size: 0.95em !important; 
     }
     /* Footer */
     .container-fluid {
-        width: 90%;
-        max-width: 1440px;
+        width: 100%;
+        max-width: 1580px;
         margin-top: 2em;
         padding: 0 3em;
-        background-image: url("images/bg-pattern-footer-desktop.svg");
+        background-image: url("../images/bg-pattern-footer-desktop.svg");
         background-repeat: no-repeat;
         background-position: contain;
     }
@@ -615,6 +618,7 @@ hr {
     .footer__links {
         text-align: left;
         width: 25%;
+        margin-left: 1.5em;
     }
     .ft__link-title {
         font-size: 0.85rem;
